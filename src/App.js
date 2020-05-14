@@ -8,6 +8,10 @@ function App() {
       <Header 
        titulo='Buscador de Noticias' 
       />
+
+      <div className="container white">
+        <h1>Formulario aquí</h1>
+      </div>
     </Fragment>
   );
 }

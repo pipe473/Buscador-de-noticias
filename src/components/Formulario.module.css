@@ -6,3 +6,13 @@
     text-align: center;
 }
 
+.buscador {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* text-align: left; */
+    text-align: start;
+}
+
+.btn-block {
+    width: 100%;
+}

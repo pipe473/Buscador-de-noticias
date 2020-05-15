@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const useSelect = (stateInicial, opciones) => {
+
+    // State del custom hook
+    const [state, actualizarState] = useState('');
    
     const SelectNoticias = () => (
         <select
@@ -10,6 +13,8 @@ const useSelect = (stateInicial, opciones) => {
             <option value="">Seleccione</option>
         </select>
     );
+
+    return [state, SelectNoticias];
 }
  
 export default useSelect;

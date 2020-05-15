@@ -5,10 +5,11 @@ import useSelect from '../hooks/useSelect';
 
 const Formulario = () => {
 
+    // Opciones de los valores que lee la API
     const OPCIONES = () => [
         { value: 'general', label: 'General' },
         { value: 'business', label: 'Negocio' },
-        { value: 'entertnainment', label: 'Entretenimiento' },
+        { value: 'entertainment', label: 'Entretenimiento' },
         { value: 'health', label: 'Salud' },
         { value: 'Science', label: 'Ciencia' },
         { value: 'Sports', label: 'Deportes' },

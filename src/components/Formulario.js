@@ -5,8 +5,18 @@ import useSelect from '../hooks/useSelect';
 
 const Formulario = () => {
 
+    const OPCIONES = () => [
+        { value: 'general', label: 'General' },
+        { value: 'business', label: 'Negocio' },
+        { value: 'entertnainment', label: 'Entretenimiento' },
+        { value: 'health', label: 'Salud' },
+        { value: 'Science', label: 'Ciencia' },
+        { value: 'Sports', label: 'Deportes' },
+        { value: 'technology', label: 'Tecnología' },
+    ]
+
 // Utilizar custom hook
-const [ categoria, SelectNoticias ] = useSelect();
+const [ categoria, SelectNoticias ] = useSelect('general', OPCIONES);
 
     return ( 
         <div className={`${styles.buscador} row`}>

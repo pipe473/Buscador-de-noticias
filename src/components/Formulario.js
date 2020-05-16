@@ -14,6 +14,8 @@ const [ categoria, SelectNoticias ] = useSelect();
                 <form>
                     <h2 className={styles.heading}>Encuentra Noticias por categoría</h2>
 
+                    <SelectNoticias />
+
                     <div className="input-field col s12">
                         <input
                             type="submit"

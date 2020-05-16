@@ -5,6 +5,16 @@ import useSelect from '../hooks/useSelect';
 
 const Formulario = () => {
 
+    const OPCIONES = [
+        { value: 'general', label: 'General'},
+        { value: 'general', label: 'General'},
+        { value: 'general', label: 'General'},
+        { value: 'general', label: 'General'},
+        { value: 'general', label: 'General'},
+        { value: 'general', label: 'General'},
+        { value: 'general', label: 'General'},
+    ]
+
 // Utilizar custom hook
 const [ categoria, SelectNoticias ] = useSelect();
 

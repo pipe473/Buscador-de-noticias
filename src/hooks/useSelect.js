@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 const useSelect = (stateInicial, opciones) => {
 
     // State del custom hook
-    const [state, actualizarState] = useState();
+    const [state, actualizarState] = useState('');
    
     const SelectNoticias = () => (
         <select

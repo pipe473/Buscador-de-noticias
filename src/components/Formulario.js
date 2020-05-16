@@ -16,7 +16,7 @@ const Formulario = () => {
     ]
 
 // Utilizar custom hook
-const [ categoria, SelectNoticias ] = useSelect('science', OPCIONES);
+const [ categoria, SelectNoticias ] = useSelect('general', OPCIONES);
 
     return ( 
         <div className={`${styles.buscador} row`}>

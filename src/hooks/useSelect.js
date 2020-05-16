@@ -8,6 +8,7 @@ const useSelect = (stateInicial, opciones) => {
     const SelectNoticias = () => (
         <select
             className="browser-default"
+            value={state}
 
         >
             {opciones.map(opcion =>(

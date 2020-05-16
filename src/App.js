@@ -7,6 +7,7 @@ function App() {
 
 // Definir categoria y noticias
 const [categoria, guardarCategoria] = useState('');
+const [noticias, guardarNoticias] = useState([]);
 
 useEffect(() => {
   const consultarAPI = async () => {
@@ -15,7 +16,7 @@ useEffect(() => {
     const respuesta = await fetch(url);
     const noticias = await respuesta.json();
 
-    console.log(noticias);
+    console.log(noticias.articles);
     
   }
   consultarAPI();

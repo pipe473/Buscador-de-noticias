@@ -16,7 +16,7 @@ useEffect(() => {
     const respuesta = await fetch(url);
     const noticias = await respuesta.json();
 
-    console.log(noticias.articles);
+    guardarNoticias(noticias.articles);
     
   }
   consultarAPI();

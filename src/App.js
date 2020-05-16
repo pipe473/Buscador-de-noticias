@@ -16,7 +16,9 @@ const [categoria, guardarCategoria] = useState('');
       />
 
       <div className="container white">
-        <Formulario />
+        <Formulario 
+          guardarCategoria={guardarCategoria}
+        />
       </div>
     </Fragment>
   );

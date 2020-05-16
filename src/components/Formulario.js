@@ -3,7 +3,7 @@ import styles from './Formulario.module.css';
 import useSelect from '../hooks/useSelect';
 
 
-const Formulario = () => {
+const Formulario = ({guardarCategoria}) => {
 
     const OPCIONES = [
         { value: 'general', label: 'General'},

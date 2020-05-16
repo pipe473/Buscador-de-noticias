@@ -10,7 +10,13 @@ const [categoria, guardarCategoria] = useState('');
 
 useEffect(() => {
   const consultarAPI = async () => {
+    const url = `http://newsapi.org/v2/top-headlines?country=co&category=${categoria}&apiKey=a185d48fb5e94ff0ba6685754794de1e`;
 
+    const respuesta = await fetch(url);
+    const noticias = await respuesta.json();
+
+    console.log(noticias);
+    
   }
   consultarAPI();
 }, [categoria]);
